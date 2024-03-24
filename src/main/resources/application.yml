@@ -1,0 +1,33 @@
+server:
+  port: 8484
+spring:
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: vzge tvpl hbki uhzp
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: balajiin99@gmail.com
+    
+app:
+ messages:
+   invalidLogin: Invalid Credentials
+   invalidPwds: Both pswds should be same
+   pwdUpdateFail: Psws update got failed
+   regSuccess: You have registerd successfully
+   regFail: you registration has failed
+   quoteEndPointUrl: https://type.fit/api/quotes
+   regEmailSubject: Hi your a/c has been created-STU BIZ SOLUTIONS
+   
